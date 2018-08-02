@@ -1,0 +1,218 @@
+@font-face {
+	font-family: "FZXiaoBiaoSong";
+	src: url(../fonts/方正小标宋简体.ttf);
+}
+
+* {
+	font-family: "FZXiaoBiaoSong";
+}
+
+
+/*导航条Start*/
+
+header {
+	/*	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#111), to(#0000ff));*/
+	/* Safari 4-5, Chrome 1-9*/
+	/*	background: -ms-linear-gradient(top, #fff, #0000ff);*/
+	/* IE 10 */
+	/*	background: -moz-linear-gradient(top, #b8c4cb, #f6f6f8);*/
+	/*火狐*/
+	/*	background: -webkit-linear-gradient(top, rgba(0, 0, 0, .6), transparent);*/
+	/*Safari5.1 Chrome 10+*/
+	/*	background: -o-linear-gradient(top, #fff, #0000ff);*/
+	/*Opera 11.10+*/
+	background-color: rgba(0, 0, 0, .8);
+	padding: 5px 0;
+}
+
+.navbar {
+	width: 1220px;
+	background-color: transparent;
+	/*SO上说应该用transparent代替rgba(0, 0, 0, 0)*/
+	margin: 0 auto;
+}
+
+.navbar-brand img {
+	width: 180px;
+}
+
+.nav-link {
+	font-size: 20px;
+	margin: 0 5px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgba(255, 255, 255, .8);
+}
+
+.navbar #search {
+	width: 160px;
+	height: 28px;
+	outline: none;
+	border: rgb(206, 212, 218);
+	background-color: rgba(255, 255, 255, .4);
+	box-shadow: none;
+}
+
+.navbar #search:focus {
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.navbar button {
+	width: 34px;
+	height: 30px;
+	padding: 5px;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	transition: none;
+}
+
+.navbar button:hover,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.btn-outline-success:focus,
+.btn-outline-success.focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+
+/*.dropdown-menu {
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+	color: rgba(255, 255, 255, .8);
+}*/
+
+
+/*导航条End*/
+
+
+/*主体信息Start*/
+
+#main-a,
+#main-b {
+	height: 700px;
+	padding: 0;
+	position: relative;
+}
+
+#main-a {
+	background: url(../img/0047.jpg) no-repeat center center;
+	box-shadow: 0 0 10px #222 inset;
+}
+
+#main-b {
+	background: url(../img/Programming.jpg) no-repeat;
+	box-shadow: 0 0 10px #222 inset;
+}
+
+#info-a,
+#info-b {
+	position: absolute;
+	top: 40%;
+	width: 700px;
+	height: 300px;
+	background-color: rgba(0, 0, 0, .5);
+	color: #ffffff;
+	padding: 30px;
+}
+
+#info-a {
+	left: 0;
+}
+
+#info-b {
+	right: 0;
+}
+
+#info-a h2 {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ffffff;
+	text-align: right;
+}
+
+#info-a p {
+	font-size: 18px;
+	text-indent: 2em;
+	text-align: right;
+}
+
+#info-b h2 {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #ffffff;
+	text-align: left;
+}
+
+#info-b p {
+	font-size: 18px;
+	text-align: left;
+}
+
+
+/*主体信息End*/
+
+
+/*页脚Start*/
+
+footer {
+	background-color: rgba(0, 0, 0, .8);
+	color: rgba(255, 255, 255, .7);
+	font-size: 14px;
+	height: 220px;
+	padding-top: 50px;
+}
+
+footer>.container-fluid {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+footer .row {
+	position: relative;
+	height: 106px;
+	border-bottom: 1px solid rgba(255, 255, 255, .7);
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+footer #qr-code {
+	position: absolute;
+	top: -20px;
+	right: 5px;
+}
+
+footer #qr-code img {
+	width: 80px;
+}
+
+.qr-code-label {
+	width: 80px;
+	text-align: center;
+	padding-top: 6px;
+}
+
+#weibo,
+#weixin {
+	width: 80px;
+	float: left;
+}
+
+#copyright {
+	text-align: center;
+}
+
+
+/*页脚End*/
